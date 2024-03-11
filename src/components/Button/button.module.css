@@ -1,0 +1,23 @@
+.btn{
+    border-radius: 8px;
+    border: none;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+
+.success{
+    background-color: green;
+    color: white;
+}
+
+.btn:disabled{
+    opacity: 0.3;
+    cursor: auto ;
+    
+
+}
+
+.md{
+    padding: 8px 20px;
+}
