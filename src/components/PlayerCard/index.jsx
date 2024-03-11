@@ -5,10 +5,10 @@ const pokemonImage = (id)=>{
     const newID = id.toString();
     let resultID = id;
     
-    if(newID.length == 1){
+    if(newID.length === 1){
         resultID = "00" + id;
     }
-    if(newID.length == 2){
+    if(newID.length === 2){
         resultID = "0" + id;
     }
 
@@ -21,6 +21,7 @@ const pokemonImage = (id)=>{
     <div className={styles.card}>
       <p className={styles.card_title}> {props.name}</p>
       <img
+      alt='pocemon'
         src={`https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${pokemonImage(
           props.id
         )}.png`}
